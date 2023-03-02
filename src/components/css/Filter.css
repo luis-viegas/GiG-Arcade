@@ -1,0 +1,140 @@
+.hide {
+    display:none
+}
+
+.sideMenuFilter {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 70% auto;
+    transition: .7s;
+}
+
+
+.sideMenuFilter-Hide {
+    right: -100%;
+}
+
+.sideMenuFilter-Show {
+    right: 0;
+}
+
+.sideMenuFilter .menu {
+    background: rgba(206, 106, 106, 0.65);
+    box-shadow: 0 8px 32px 0 rgba(206, 106, 106, 0.294);
+    mix-blend-mode: normal;
+    backdrop-filter: blur( 10px );
+    padding: 10% 7.5%;
+    overflow-y: scroll;
+}
+
+.sideMenuFilter .menu .menu-search {
+    width: 100%;
+    border: none;
+    height: 6%;
+    border-radius: 30px;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 5%;
+    margin-bottom: 10%;
+}
+
+.sideMenuFilter .menu .games {
+    margin-top: 10%;
+    background-color: rgb(219, 70, 70);
+    height: 100%;
+}
+
+.item-title {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.item-title span {
+    position:relative;
+    vertical-align: text-bottom;
+    color: white;
+}
+
+.item-title p {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0.20em;
+    font-size: 2em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.filter-item {
+    margin-bottom: 5%;
+}
+
+.item-title img {
+    max-height: 3em;
+    transform: rotate(0deg);
+}
+
+.filter-item hr {
+    border: none;
+    height: 6px;
+    background: white;
+}
+
+
+
+.item-content {
+    display: none;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.item-content.open {
+    display: block;
+}
+
+.item-content  p {
+    text-align: center;
+    font-size: 1em;
+    display: inline-block;
+    width: auto;
+    border-radius: 10px;
+    padding: 0.75em 0.75em;
+    margin: 0.35em;
+    border: solid white 2px;
+}
+
+.item-content  p.normal {
+    color: white;
+    
+    background-color: transparent;
+}
+.item-content p:hover{
+    cursor: pointer;
+}
+.item-content  p.active {
+    color: #f18882;
+    background-color: white;
+}
+
+.filter-item .arrowIcon {
+    transition: transform .3s;
+}
+
+.filter-item.open .arrowIcon {
+    transform: rotate(180deg);
+}
+
+.item-content .item-search {
+    width: 95%;
+    border: none;
+    height: 3%;
+    border-radius: 30px;
+    font-size: 1em;
+    text-align: left;
+    padding: 2.5% 4.5%;
+    margin-bottom: 2em;
+    outline: none;
+}

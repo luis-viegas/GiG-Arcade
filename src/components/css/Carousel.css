@@ -1,0 +1,51 @@
+.carousel{
+    margin-top: 26px;
+}
+.carousel.carousel-slider {
+    position: relative;
+    margin: 0;
+    height: 300px;
+
+}
+
+.carousel .thumb {
+    -webkit-transition: border .15s ease-in;
+    -moz-transition: border .15s ease-in;
+    -ms-transition: border .15s ease-in;
+    -o-transition: border .15s ease-in;
+    transition: border .15s ease-in;
+    display: inline-block;
+    margin-right: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+
+    padding: 2px;
+    width: 5%;
+    height: 100px;
+    
+}
+
+.carousel .thumbs-wrapper {
+
+    overflow: hidden;
+}
+
+.carousel .control-dots {
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.carousel img{
+    height: 100%;
+   /* border-radius: 10px;*/
+}
+
+img{
+
+}

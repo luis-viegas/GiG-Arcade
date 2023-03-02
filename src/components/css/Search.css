@@ -1,0 +1,126 @@
+.sideMenu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 75% auto;
+    transition: .7s;
+}
+
+.sideMenu .menu {
+    background: rgba(206, 106, 106, 0.65);
+    box-shadow: 0 8px 32px 0 rgba(206, 106, 106, 0.294);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(10px);
+    padding: 10% 1.25%;
+
+}
+
+.sideMenu .menu input {
+    width: 65%;
+    border: none;
+    height: 6%;
+    border-radius: 30px;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 5%;
+    outline: none;
+}
+
+.sideMenu .menu .games {
+    text-align: center;
+    margin-top: 10%;
+    height: 100%;
+}
+
+.search-game-card {
+    display: inline-block;
+    width: 60%;
+    height: 24vh;
+    margin-bottom: 7.5%;
+    position: relative;
+
+
+}
+
+.search-game-card img {
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    border-radius: 4%;
+}
+
+.search-game-card:hover img {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.search-game-card:hover .hover-view-container {
+    display: block;
+}
+
+.search-game-card .hover-view-container {
+    display: none;
+    position: absolute;
+    top: 25%;
+    width: 50%;
+    left: 25%;
+}
+
+/*TODO Change display of bottons to put one on top of the other*/
+.search-game-card input {
+    text-align: center !important;
+    color: black;
+    border-radius: 10px;
+    background: white;
+    padding: 3%;
+    border: none;
+    margin-bottom: 20%;
+}
+.search-game-card #play-button {
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    border-radius: 4%;
+    border: black;
+    font: icon;
+    font-weight: bolder;
+    color: white;
+    
+    background-color:transparent ;
+
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    border: solid white 3px;
+    transform: translate(0, 30%);
+
+}
+
+.search-game-card #info-button {
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    border-radius: 4%;
+    border: black;
+    font: icon;
+    font-weight: bolder;
+    color: white;
+    
+    background-color:transparent ;
+
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    border: solid white 3px;
+    transform: translate(0, 10%);
+}
+
+.search-game-card #info-button:hover{
+    cursor: pointer;
+}
+
+.search-game-card #play-button:hover{
+    cursor: pointer;
+}
